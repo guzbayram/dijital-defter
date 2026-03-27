@@ -442,7 +442,10 @@ window.saveUser=async()=>{
     await signInWithEmailAndPassword(auth,CU.email,CP.password);
     closeModal('mAdd');await renderYon();
     alert(`✅ ${name} eklendi.\nKullanıcı: ${uname}\nŞifre: ${pass}`);
-  }catch(e){alert('Hata: '+e.message);}
+  }catch(e){
+    if(e.code==='auth/email-already-in-use')alert('Bu kullanıcı adı zaten kayıtlı. Farklı bir kullanıcı adı seçin.');
+    else alert('Hata: '+e.message);
+  }
   btn.disabled=false;btn.textContent='Kaydet';
 };
 
