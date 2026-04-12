@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(firebase projects:list)",
+      "Bash(firebase --help)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('sections:', list\\(d.keys\\(\\)\\) if isinstance\\(d, dict\\) else 'list'\\); print\\('len:', len\\(d\\) if isinstance\\(d, list\\) else 'dict'\\)\")",
+      "Bash(python3:*)",
+      "Bash(gcloud auth:*)",
+      "Bash(firebase use:*)",
+      "Bash(firebase projects:list --json)"
+    ]
+  }
+}
