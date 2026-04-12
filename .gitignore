@@ -1,0 +1,14 @@
+# Büyük dosyalar
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# Firebase cache
+.firebase/
+
+# Claude ayarları
+.claude/
+
+# Karne ham dosyaları
+karne/
